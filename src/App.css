@@ -54,3 +54,15 @@ body{
     flex-direction: column;
   }
 }
+@media (max-width: 746px) {
+  .app_stats
+  {
+    flex-direction: column;
+  }
+  .infoBox{
+    margin-bottom: 20px;
+  }
+  .app_right{
+    margin-top: 30px;
+  }
+}
