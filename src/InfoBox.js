@@ -10,9 +10,10 @@ const InfoBox = ({ title, cases, isRed, active, total, ...props }) => {
                 <Typography className="infoBox_title" color="textSecondary">
                     {title}
                 </Typography>
-                <h2 className={`infoBox_cases ${!isRed && "infoBox_cases--green"}`}>{cases}</h2>
+                <h2 className={`infoBox_cases ${!isRed && "infoBox_cases--green"}`}>{cases}
+                <small style={{'marginLeft': '13px', 'color': 'grey', 'fontSize': '20px'}}>Today's Total</small></h2>
                 <Typography className="infoBox_total" color="textSecondary">
-                    {total} Total
+                    <h2>{total}<small style={{'marginLeft': '10px', 'color': 'grey', 'fontSize': '18px'}}>Total</small></h2>
                 </Typography>
             </CardContent>
         </Card>
